@@ -1,27 +1,22 @@
 # aws-storage-services
 
-Absolutely! Here's a **comprehensive `README.md`** tailored to your AWS S3 static website hosting task, including CLI commands, results, and details about the mentee's uploaded frontend files.
-
----
-
-```markdown
-# AWS S3 Static Website Hosting with AWS CLI
+## AWS S3 Static Website Hosting with AWS CLI
 
 This project demonstrates how to use **AWS S3** and the **AWS CLI** to create and manage S3 buckets, upload files, configure static website hosting, and set public permissions.
 
 ---
 
-## 📁 Repository Name
+## Repository Name
 **aws-storage-services**
 
 ---
 
-## 👤 Mentee Contribution
-The HTML files used for the static website were provided by **Frontend Mentee: Nifesimi**.
+## Mentee Contribution
+The HTML files used for the static website were provided by **Frontend Mentee: Ihekwoaba Patricia Ada**.
 
 ---
 
-## 📌 Objectives
+## Objectives
 
 1. Create an S3 bucket
 2. Upload, retrieve, and delete objects
@@ -32,7 +27,7 @@ The HTML files used for the static website were provided by **Frontend Mentee: N
 
 ---
 
-## 🧰 Tools Used
+##  Tools Used
 
 - AWS CLI
 - Git & GitHub
@@ -41,7 +36,7 @@ The HTML files used for the static website were provided by **Frontend Mentee: N
 
 ---
 
-## ✅ Step-by-Step Process
+## Step-by-Step Process
 
 ### 1. Create an S3 Bucket
 
@@ -54,8 +49,8 @@ aws s3api create-bucket --bucket preciousnife --region us-east-1
 ### 2. Upload Objects to the Bucket
 
 ```bash
-aws s3 cp index.html s3://preciousnife/
-aws s3 cp about.html s3://preciousnife/
+aws s3 cp Week6 s3://preciousnife/
+aws s3 cp html s3://preciousnife/
 ```
 
 ---
@@ -63,15 +58,15 @@ aws s3 cp about.html s3://preciousnife/
 ### 3. Retrieve Objects
 
 ```bash
-aws s3 cp s3://preciousnife/index.html .
+aws s3 cp s3://preciousnife/Week6 
 ```
 
 ---
 
-### 4. Delete Objects (if needed)
+### 4. Delete Objects 
 
 ```bash
-aws s3 rm s3://preciousnife/about.html
+aws s3 rm s3://preciousnife/html
 ```
 
 ---
@@ -79,7 +74,7 @@ aws s3 rm s3://preciousnife/about.html
 ### 5. Enable Static Website Hosting
 
 ```bash
-aws s3 website s3://preciousnife/ --index-document index.html
+aws s3 website s3://preciousnife/ --index-document Week6
 ```
 
 ---
@@ -129,26 +124,11 @@ http://preciousnife.s3-website-us-east-1.amazonaws.com
 
 ---
 
-## 🖼️ Screenshots & Logs
-
-- ✅ S3 bucket creation log
-- ✅ Public access configuration
-- ✅ Static website preview
-- ✅ AWS CLI outputs
-
-(Screenshots are included in the `screenshots/` folder.)
+## Screenshots 
 
 ---
 
-## 🧾 Notes
-
-- Ensure your AWS CLI is configured with the appropriate IAM user credentials.
-- Always verify public access settings before applying policies.
-- For security, only host non-sensitive static content publicly.
-
----
-
-## 🔗 Useful Commands Summary
+## Useful Commands Summary
 
 | Action | Command |
 |--------|---------|
@@ -161,18 +141,3 @@ http://preciousnife.s3-website-us-east-1.amazonaws.com
 
 ---
 
-## 💡 Author
-
-Precious Nifesi
-
----
-
-## 📬 Feedback & Contributions
-
-Feel free to fork, clone, and submit a pull request. For questions or improvements, open an issue!
-
-```
-
----
-
-Let me know if you'd like me to help create the `screenshots/` folder or draft a `.gitignore` for good repo hygiene!
