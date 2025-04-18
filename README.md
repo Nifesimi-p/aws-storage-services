@@ -125,7 +125,10 @@ http://preciousnife.s3-website-us-east-1.amazonaws.com
 ---
 
 ## Screenshots 
-
+![CLI](https://github.com/Nifesimi-p/aws-storage-services/blob/main/CLI.png)
+![Downloadedhtml](https://github.com/Nifesimi-p/aws-storage-services/blob/main/Downloadedhtml.png)
+![previewhtml](https://github.com/Nifesimi-p/aws-storage-services/blob/main/previewhtml.png)
+![staticwebsite](https://github.com/Nifesimi-p/aws-storage-services/blob/main/staticwebsite.png)
 ---
 
 ## Useful Commands Summary
